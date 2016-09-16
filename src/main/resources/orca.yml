@@ -1,0 +1,34 @@
+server:
+  port: 8083
+
+default:
+  bake:
+    account: default
+
+front50:
+  baseUrl: http://localhost:8080
+tide:
+  baseUrl: http://localhost:8090
+oort:
+  baseUrl: http://localhost:7002
+mort:
+  baseUrl: http://localhost:7002
+kato:
+  baseUrl: http://localhost:7002
+echo:
+  enabled: false
+igor:
+  baseUrl: http://localhost:8088
+bakery:
+  baseUrl: http://localhost:8089
+  # Rosco exposes more endpoints than Netflix's internal bakery. This disables
+  # the use of those endpoints.
+  roscoApisEnabled: true
+  allowMissingPackageInstallation: false
+
+redis:
+  connection: ${REDIS_URL:redis://localhost:6379}
+
+tasks:
+  useWaitForAllNetflixAWSInstancesDownTask: false
+

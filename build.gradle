@@ -56,6 +56,9 @@ configurations.all {
 		}
 	}
 
+	exclude group: 'javax.servlet', module: 'servlet-api'
+	exclude group: 'javax.ws.rs', module: 'jsr311-api'
+
 	exclude group: 'org.slf4j', module: 'log4j-over-slf4j'
 	exclude group: 'org.slf4j', module: 'slf4j-log4j12'
 }

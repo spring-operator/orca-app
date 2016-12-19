@@ -2,7 +2,7 @@ buildscript {
 	ext {
 		springBootVersion = '1.2.8.RELEASE'
 		orcaVersion = '1.246.0'
-		orcaAppVersion = '1.0.0.M1'
+		orcaAppVersion = '1.0.0.BUILD-SNAPSHOT'
 	}
 	repositories {
 		mavenCentral()
